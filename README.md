@@ -1,10 +1,15 @@
 # Investing.com
 
-Get the economic calendar from investing.com
+Get the economic calendar from
+[http://www.investing.com](http://www.investing.com)
 
-Run it
+## Install
 
-    go run investingcom.go
+    go get github.com/scottjbarr/investingcom
+
+## Run it
+
+    investingcom
 
 ## Notes
 
