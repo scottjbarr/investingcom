@@ -38,8 +38,8 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Printf("open,high,low,close,volume\n")
-	for _, ohlc := range resp.Data {
-		fmt.Printf("%0.4f,%0.4f,%0.4f,%0.4f,%v\n", ohlc.Open, ohlc.High, ohlc.Low, ohlc.Close, ohlc.Volume)
+	fmt.Printf("time,open,high,low,close,volume\n")
+	for _, c := range resp.Data {
+		fmt.Printf("%v,%0.4f,%0.4f,%0.4f,%0.4f,%v\n", c.Timestamp, c.Open, c.High, c.Low, c.Close, c.Volume)
 	}
 }
