@@ -1,28 +1,37 @@
 # Investing.com
 
-Get the economic calendar from
-[http://www.investing.com](http://www.investing.com)
+A client for https://investing.com .
 
-## Install
+This client only implements history releated features.
 
-    go get github.com/scottjbarr/investingcom
+## investingcom-history
 
-## Run it
+CLI utility to get history in CSV format.
 
-    investingcom
+```
+$ go run cmd/investingcom-history --help
+open,high,low,close,volume
+1.0441,1.0489,1.0382,1.0482,83871
+1.0481,1.0487,1.0366,1.0428,68085
+1.0424,1.0464,1.0417,1.0421,68801
+...
+```
 
-## Notes
+## investingcom-pairs
 
-Minimal example
+CLI utility to get a list of all pair ID's.
 
-    curl 'http://m.investing.com/economic-calendar/services/filter/' \
-        -H 'X-Requested-With: XMLHttpRequest' \
-        --data 'timeZone=8&country[]=25&country[]=32&country[]=6&country[]=37&country[]=72&country[]=22&country[]=17&country[]=39&country[]=14&country[]=10&country[]=35&country[]=43&country[]=36&country[]=110&country[]=11&country[]=26&country[]=12&country[]=4&country[]=5&country[]=56&currentTab=today'
+```
+$ go run cmd/investingcom-pairs
+1,EUR/USD
+2,GBP/USD
+3,USD/JPY
+4,USD/CHF
+...
+```
 
 ## License
 
-The MIT License (MIT)
+Copyright (c) 2022 Scott Barr
 
-Copyright (c) 2016 Scott Barr
-
-See [LICENCE.md](LICENCE.md)
+All rights reserved.

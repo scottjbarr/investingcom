@@ -1,0 +1,32 @@
+{
+  "data": [
+    [
+      1652788800000,
+      1.054,
+      1.0547,
+      1.0537,
+      1.0541,
+      1021,
+      41378
+    ],
+    [
+      1652789700000,
+      1.054,
+      1.054,
+      1.0532,
+      1.0537,
+      1018,
+      42399
+    ]
+  ],
+  "events": [
+    {
+      "text": "<div class=\"event-container\"><a href=\"/news/arcelormittal-adr-earnings-revenue-beat-in-q2-2856026\" target=\"_blank\">ArcelorMittal ADR Earnings, Revenue Beat in Q2</a><div class=\"event-credits arial_10\">VAR_TIMESTAMP</div></div>",
+      "time": 1658985283000,
+      "title": "N",
+      "type": "news",
+      "x": 1658985300000,
+      "y": 1.0207
+    }
+  ]
+}
