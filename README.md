@@ -1,10 +1,12 @@
 # Investing.com
 
-A client for https://investing.com .
+A Go client for https://investing.com .
 
-This client only implements history releated features.
+This client currently only implements the history endpoint.
 
-## investingcom-history
+## CLI Utilities
+
+### investingcom-history
 
 CLI utility to get history in CSV format.
 
@@ -17,7 +19,7 @@ open,high,low,close,volume
 ...
 ```
 
-## investingcom-pairs
+### investingcom-pairs
 
 CLI utility to get a list of all pair ID's.
 
@@ -29,6 +31,10 @@ $ go run cmd/investingcom-pairs
 4,USD/CHF
 ...
 ```
+
+## References
+
+- [Investing.com Unofficial APIs](https://github.com/DavideViolante/investing-com-api)
 
 ## License
 
